@@ -1,6 +1,6 @@
 package com.bignerdranch.testphilosophyjava.homecontrol.parallelExecution.synchronizing;
 
-public class Car {
+public class CarS {
     private boolean waxOn = false;
     public synchronized void waxed(){
         waxOn= true;

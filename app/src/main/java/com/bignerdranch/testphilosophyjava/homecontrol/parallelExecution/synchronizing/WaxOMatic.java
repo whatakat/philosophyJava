@@ -6,7 +6,7 @@ import java.util.concurrent.TimeUnit;
 
 public class WaxOMatic {
     public static void main(String[] args) throws Exception {
-        Car car = new Car();
+        CarS car = new CarS();
         ExecutorService exec = Executors.newCachedThreadPool();
         exec.execute(new WaxOff(car));
         exec.execute(new WaxOn(car));

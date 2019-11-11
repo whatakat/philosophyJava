@@ -2,6 +2,6 @@ package com.bignerdranch.testphilosophyjava.homecontrol.parallelExecution.synchr
 
 import java.util.concurrent.LinkedBlockingQueue;
 
-public class CarQueue extends LinkedBlockingQueue {
+public class CarQueue extends LinkedBlockingQueue<Car> {
 
 }

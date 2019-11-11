@@ -11,7 +11,7 @@ public class Car {
     public synchronized void addDriveTrain(){driveTrain = true;}
     public synchronized void addWheels(){wheels = true;}
     public synchronized String toString(){
-        return "Car "+id+" ["+" engine: "+engine
+        return "CarS "+id+" ["+" engine: "+engine
                 +" driveTrain: "+driveTrain
                 +" wheels: "+wheels+" ]";
     }

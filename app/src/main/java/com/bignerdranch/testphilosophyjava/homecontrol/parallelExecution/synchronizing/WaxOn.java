@@ -6,8 +6,8 @@ import static com.bignerdranch.testphilosophyjava.homecontrol.print.Print.print;
 import static com.bignerdranch.testphilosophyjava.homecontrol.print.Print.printnb;
 
 public class WaxOn implements Runnable {
-    private Car car;
-    public WaxOn(Car c){car =c;}
+    private CarS car;
+    public WaxOn(CarS c){car =c;}
     public void run(){
         try {
             while (!Thread.interrupted()){
