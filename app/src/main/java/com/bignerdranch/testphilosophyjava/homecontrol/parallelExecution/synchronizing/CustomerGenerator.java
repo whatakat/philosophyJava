@@ -15,7 +15,7 @@ public class CustomerGenerator implements Runnable {
         try {
             while (!Thread.interrupted()){
                 TimeUnit.MILLISECONDS.sleep(rand.nextInt(300));
-                customers.put(new Customer(rand.nextInt(1000)));
+                customers.put(new CustomerS(rand.nextInt(1000)));
             }
         }catch (InterruptedException e){
             print("CustomerGenerator interrupted");

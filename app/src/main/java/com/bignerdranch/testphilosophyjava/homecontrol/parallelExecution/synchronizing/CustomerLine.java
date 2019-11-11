@@ -2,7 +2,7 @@ package com.bignerdranch.testphilosophyjava.homecontrol.parallelExecution.synchr
 
 import java.util.concurrent.ArrayBlockingQueue;
 
-public class CustomerLine extends ArrayBlockingQueue<Customer> {
+public class CustomerLine extends ArrayBlockingQueue<CustomerS> {
     public CustomerLine(int maxLineSize){
         super(maxLineSize);
     }
@@ -10,8 +10,8 @@ public class CustomerLine extends ArrayBlockingQueue<Customer> {
         if (this.size()==0)
             return "[Empty]";
         StringBuilder result = new StringBuilder();
-        for (Customer customer: this)
-            result.append(customer);
+        for (CustomerS customerS : this)
+            result.append(customerS);
         return result.toString();
     }
 }

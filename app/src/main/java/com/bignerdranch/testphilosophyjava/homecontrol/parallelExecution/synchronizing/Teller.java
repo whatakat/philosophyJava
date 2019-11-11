@@ -14,9 +14,9 @@ public class Teller implements Runnable, Comparable<Teller> {
     public void run(){
         try {
             while (!Thread.interrupted()){
-                Customer customer = customers.take();
+                CustomerS customerS = customers.take();
                 TimeUnit.MILLISECONDS.sleep(
-                        customer.getServiseTime());
+                        customerS.getServiseTime());
                 synchronized (this){
                     customerServed++;
                     while (!servingCustomerLine)
