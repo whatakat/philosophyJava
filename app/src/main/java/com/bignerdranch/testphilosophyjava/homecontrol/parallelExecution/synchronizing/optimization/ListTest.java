@@ -3,6 +3,11 @@ package com.bignerdranch.testphilosophyjava.homecontrol.parallelExecution.synchr
 import java.util.List;
 
 public class ListTest extends Tester<List<Integer>> {
+    @Override
+    List<Integer> containerInitializer() {
+        return null;
+    }
+
     ListTest(String testId, int nReaders, int nWriters){
         super(testId, nReaders, nWriters);
     }
